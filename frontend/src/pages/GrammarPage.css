@@ -1,0 +1,115 @@
+.grammar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.grammar-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+
+.grammar-card:hover {
+    border-color: var(--primary);
+}
+
+.grammar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    cursor: pointer;
+}
+
+.grammar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.grammar-point {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.grammar-romaji {
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-style: italic;
+}
+
+.grammar-toggle {
+    color: var(--text-muted);
+}
+
+.grammar-body {
+    padding: 0 20px 20px;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+}
+
+.grammar-explanation {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.grammar-structure {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--bg-card2);
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.structure-label {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.grammar-structure code {
+    font-size: 0.9rem;
+    color: var(--primary);
+    background: none;
+}
+
+.grammar-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.examples-label {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.grammar-example {
+    background: var(--bg-card2);
+    padding: 10px 14px;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+}
+
+.example-jp {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.example-en {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}

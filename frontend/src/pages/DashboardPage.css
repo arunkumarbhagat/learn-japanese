@@ -1,0 +1,146 @@
+.dash-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.dash-stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.dash-stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.dash-stat-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.dash-stat-val {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.dash-stat-lbl {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.dash-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.dash-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-muted);
+}
+
+.donut-wrapper {
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.dash-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.dash-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-muted);
+}
+
+.weak-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.weak-tag {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    text-transform: capitalize;
+}
+
+.test-history {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.test-history-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+}
+
+.th-date {
+    color: var(--text-muted);
+    flex: 1;
+}
+
+.th-score {
+    font-weight: 600;
+    min-width: 50px;
+    text-align: right;
+}
+
+.th-bar {
+    flex: 2;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.th-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+    .dash-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dash-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .dash-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

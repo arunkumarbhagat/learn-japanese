@@ -1,0 +1,117 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(15, 15, 26, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.logo-jp {
+    width: 32px;
+    height: 32px;
+    background: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+}
+
+.logo-text {
+    color: var(--text);
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+    overflow-x: auto;
+}
+
+.nav-link {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text);
+    background: var(--bg-card);
+}
+
+.nav-link.active {
+    color: var(--primary);
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text);
+    padding: 4px;
+}
+
+@media (max-width: 900px) {
+    .navbar-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .navbar-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: var(--bg-card);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        padding: 12px;
+        gap: 4px;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .navbar-actions {
+        margin-left: auto;
+    }
+}
